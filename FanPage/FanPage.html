@@ -2,7 +2,13 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="music-video" content="Music videos!" />
+
   <title>FanPage!</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://apis.google.com/js/client.js?onload=init"></script>
 
     <!--CSS!!! for web page -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,8 +22,51 @@
 
 </head>
 <body>
- 
-  
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Fan Page</h1>
+      <p class="lead">Search below your favorite artist/band!</p>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Artist/Band" aria-label="Artist/Band" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-search">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="spotify-card">Track List</h1>
+        <p class="Track-list">Track list goes here</p>
+        <div id="spotifyresults"></div>
+      </div>  
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="youtube-card">Music Videos</h5>
+        <p class="video-list">Music videos go here</p>
+        <div id="videoresults"></div>
+        
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="ebay-card">Buy Merch Here</h5>
+        <p class="ebay-list">List of merch here</p>
+          <div id="ebayresults"></div>
+          </div>
+    </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="artist-card">Artist-info</h5>
+            <p class="wiki-info">Artist/Band info goes here</h5>
+            <div id="wikiresults"></div>
+            <h5 class="songkick-card">Artist-tour dates/tickets</h5>
+            <p class="songkick-info">Tour dates and tickets goes here</p>
+            <div id="songkickresults"></div>
+          </div>
+  </div>
 
 </body>
 
