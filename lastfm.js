@@ -8,7 +8,7 @@ $("#button-search").on("click", function(event) {
 
   var artistName = $("#artist-input").val().trim();
   
-  var correctedNameURL = "http://ws.audioscrobbler.com/2.0/?method=artist.getcorrection&artist=" + artistName + "&api_key=8ec61604940d4c07d1444489c77899e0&format=json"
+  var correctedNameURL = "https://ws.audioscrobbler.com/2.0/?method=artist.getcorrection&artist=" + artistName + "&api_key=8ec61604940d4c07d1444489c77899e0&format=json"
 
 
   $.ajax({
@@ -18,7 +18,7 @@ $("#button-search").on("click", function(event) {
     var correctedName = response.corrections.correction.artist.name;
     artistName = correctedName;
 
-    var tracksURL = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artistName + "&api_key=8ec61604940d4c07d1444489c77899e0&format=json";
+    var tracksURL = "https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artistName + "&api_key=8ec61604940d4c07d1444489c77899e0&format=json";
     $(".artist-card").text("");
     $(".artist-card").append(artistName + " Bio");
 
@@ -42,7 +42,7 @@ $("#button-search").on("click", function(event) {
     }
   });
 
-  var infoURL = "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artistName + "&api_key=8ec61604940d4c07d1444489c77899e0&format=json";
+  var infoURL = "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artistName + "&api_key=8ec61604940d4c07d1444489c77899e0&format=json";
     
   $.ajax({
     url: infoURL,
@@ -67,7 +67,7 @@ $("#button-search").on("click", function(event) {
       }
     });
 
-    var albumsURL = "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=" + artistName + "&api_key=8ec61604940d4c07d1444489c77899e0&format=json";
+    var albumsURL = "https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=" + artistName + "&api_key=8ec61604940d4c07d1444489c77899e0&format=json";
 
     $.ajax({
       url: albumsURL,
