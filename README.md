@@ -17,3 +17,5 @@ Band/artist image, social media, and concet ticket links are being pulled and da
 * Last FM API
 * Ticketmaster API
 * Siema Carousel
+
+Link to deployed project: https://mafner.github.io/groupProjectOne/
