@@ -10,6 +10,8 @@ Top tracks, albums, and biography info is being pulled and data dynamically gene
 
 Band/artist image, social media, and concet ticket links are being pulled and data dynamically generated on the page using the ticketmaster API.
 
+Try it out here: https://shibby220.github.io/UltimateFanPage/
+
 ## Built With
 
 * Bootstrap
